@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -56,7 +56,7 @@ test:
     - python -m pytest --pyargs impact -k "not test_bmad and not test_output and not test_distgen_model"
 
 about:
-  home: https://github.com/ChristopherMayes/{{ name }}
+  home: https://github.com/lume-science/lume-impact
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
