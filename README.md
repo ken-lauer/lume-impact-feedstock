@@ -3,7 +3,7 @@ About lume-impact-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lume-impact-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ChristopherMayes/lume-impact
+Home: https://github.com/lume-science/lume-impact
 
 Package license: Apache-2.0
 
@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `lume-impact` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install lume-impact
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install lume-impact
 ```
 
-It is possible to list all of the versions of `lume-impact` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add lume-impact
+# for installing globally
+pixi global install lume-impact
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `lume-impact` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search lume-impact --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search lume-impact --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search lume-impact --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds lume-impact --channel conda-forge
 # List dependencies of `lume-impact`:
 mamba repoquery depends lume-impact --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
